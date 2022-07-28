@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--COMINEZO DEL HEAD-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--ANIMATE ESTILOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--ANIMATE_AOS ESTILOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="icon" href="../Logo/Icono.ico">
+
+
+    <!--FONTS GOOGLE-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>CONTACTO</title>
+</head>
+
+<!--COMIENZO DEL BODY-->
+<body>
+
+<!---------------------------------------------------------NAVBAR-BOOTSTRAP---------------------------------------------------->
+
+<header>
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-success fs-3 fw-bolder border-bottom border-sucess shadow-none p-3 rounded animate__animated animate__fadeInUpBig" href="../index.html">Coaching y Algo +</a>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0"><li class="nav-item text-center" data-aos="fade-left" data-aos-duration="900"><a class="nav-link text-success fw-semibold text-uppercase fs-5 border border-success rounded-pill border-2 m-1" href="../pages/quiensoy.html">Quien Soy</a></li>
+
+                    <li class="nav-item text-center" data-aos="fade-left" data-aos-duration="800"><a class="nav-link text-success fw-semibold text-uppercase fs-5 border border-success rounded-pill border-2 m-1" href="../index.html">Home</a></li>
+
+                    <li class="nav-item text-center" data-aos="fade-left" data-aos-duration="750"><a class="nav-link text-success fw-semibold text-uppercase fs-5 border border-success rounded-pill border-2 m-1" href="../pages/sesiones.html">Sesiones</a></li>
+
+                    <li class="nav-item text-center" data-aos="fade-left" data-aos-duration="700"><a class="nav-link text-success fw-semibold text-uppercase fs-5 border border-success rounded-pill border-2 m-1" href="../pages/distinciones.html">Distinciones</a></li>
+
+                    <li class="nav-item text-center" data-aos="fade-left" data-aos-duration="500"><a class="nav-link text-success fw-semibold text-uppercase fs-5 border border-success rounded-pill border-2 m-1" href="./contacto.html">Contacto</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+    </nav>
+
+</header>
+
+<!--------------------------------------------------------FIN-NAVBAR------------------------------------------------------->
+
+
+<!----------------------------------------------FORMULARIO DE CONTACTO-BOOTSTRAP-------------------------------------------->
+
+<form action="" data-aos="flip-left" data-aos-duration="1000"> 
+    
+    <fieldset class="m-2">
+    
+        <div class="container form-control border-success">
+            
+            <div class="row mt-2 mb-3">
+
+                <h1 for="" class="col-12 text-center text-uppercase fs-4 text-success">contactame</h1>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="mb-3 col-6">
+                    <label for="apellido" class="form-label">Apellido/s</label>
+                    <input type="text" class="form-control form-control-sm" id="" placeholder="Apellido" required>
+                </div>
+
+                <div class="mb-3 col-6">
+                    <label for="nombre" class="form-label">Nombre/s</label>
+                    <input type="text" class="form-control form-control-sm" id="" placeholder="Nombre" required>
+                </div>
+
+            </div>
+
+
+            <div class="row"> 
+                <div class="mb-3 col-6">
+                    <label for="fechanac" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control form-control-sm" id="" placeholder="" required>
+                </div>
+
+                <div class="mb-3 col-6">
+                    <label for="nacionalidad" class="form-label">Nacionalidad</label>
+                    <select class="form-select form-select-sm aria-label="Default select example" required>
+                        <option value="1">Seleccionar</option>
+                        <option value="1">Argentina</option>
+                        <option value="2">Bolivia</option>
+                        <option value="3">Brasil</option>
+                        <option value="3">Chile</option>
+                        <option value="3">Colombia</option>
+                        <option value="3">Ecuador</option>
+                        <option value="3">Paraguay</option>
+                        <option value="3">Peru</option>
+                        <option value="3">Uruguay</option>
+                      </select>
+                </div>
+            </div>
+
+
+            <div class=row> 
+                <div class="mb-3 col-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-sm" id="" placeholder="name@example.com" required>
+                </div>
+
+                <div class="mb-3 col-6">
+                    <label for="telcontacto" class="form-label">Telefono de contacto</label>
+                    <input type="number" class="form-control form-control-sm" id="" placeholder="Codigo de area" required>
+                    <input type="number" class="form-control form-control-sm" id="" placeholder="Telefono/Celular" required>
+                </div>       
+            </div>
+
+
+            <div class="row">
+                <div class="mb-3 col-12">
+                    <label for="comentarios" class="form-label">Comentarios y preguntas</label>
+                    <textarea class="form-control" id="" rows="3" placeholder="Comente aqui..." ></textarea>
+                    
+                </div>
+            </div>
+
+
+            <div class="row"> 
+                <div class="mb-3 col-12 d-flex justify-content-center gap-2">
+                    <input class="btn btn-success " type="submit" name="" id="" value="Enviar">
+                    <input class="btn btn-success" type="reset" value="Borrar datos">
+                </div>
+            </div>
+            
+
+        </div> 
+
+    </fieldset>
+
+</form>
+
+<!---------------------------------------------FIN-FORMULARIO DE CONTACTO--------------------------------------------------->
+
+
+
+
+<!---------------------------------------------------------FOOTER-BOOTSTRAP--------------------------------------------------->
+<footer class="container.fluid">
+
+    <div class="row"> 
+        <h3 class="text-center col-12">Seguinos en las redes sociales</h3>
+    </div>
+
+    <div class="row d-flex justify-content-center"> 
+    <a class="w-25" href="https://m.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="icono facebook"></a>
+    <a class="w-25" href="https://www.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt="icono whatsapp"></a>
+    <a class="w-25" href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="iconoinstagram"></a>
+    </div>
+
+    <div class="row"> 
+    <p class="piedepagina__paragraph text-center col-12">Todo los derechos reservados <span class="barra"> |</span> 2022</p>
+    </div>
+
+</footer>
+
+<!---------------------------------------------------------FIN-FOOTER--------------------------------------------------->
+
+
+
+
+
+
+
+
+<!---------------------------------------------ENLACES-------------------------------------------------------------------->
+
+<!--JS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init(); </script>
+<!--JS-->
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+<!--------------------------------------------------ENLACES----------------------------------------------------------->
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,167 @@
+/*------------------- SECTION | DISTINCIONES ----------------------------------*/
+
+/*ESTILOS-MAIN*/
+
+.contdintinciones{
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows:auto auto auto auto auto auto ;
+
+    grid-template-areas:
+    "conttitulo"
+    "contobservador" 
+    "contperssist"
+    "contmarcoconst"
+    "contcel"
+    "contdomenergetico"
+    
+    ;
+
+    text-align: justify;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    margin: 0.4rem;
+
+}
+
+.conttitulo{
+    grid-area: conttitulo;
+}
+.contobservador{
+grid-area: contobservador;
+}
+
+.contperssist{
+grid-area:contperssist;
+}
+
+.contmarcoconst{
+grid-area:contmarcoconst;
+}
+
+.contcel{
+grid-area:contcel;
+}
+
+.contdomenergetico{
+grid-area:contdomenergetico;
+}
+
+.conttitulo{    
+    h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+}
+
+.contobservador__titulo{
+    text-align: center;
+}
+
+.contperssist__titulo{
+    text-align: center;
+}
+
+.contmarcoconst__titulo{
+    text-align: center  ;
+}
+
+/*---PROPIEDAD PARA BOOTSTRAP---*/
+.ContenedorPrinpDistinciones{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+/*---PROPIEDAD PARA BOOTSTRAP---*/
+
+
+
+
+@Media screen and (min-width:600px){
+
+
+    .contcel--flex{
+        display: flex;
+
+        text-align: justify;
+
+        gap: 1rem;
+
+
+    }
+
+}
+
+@Media screen and (min-width:1024px){
+
+.contcel{ 
+    div{        
+        article{    
+    padding: 1.5rem;
+    border-radius: 5rem;
+    background-color: $ColorContenedorCEL;
+    }
+    }
+}
+
+
+.contcel {
+    .contcel--flex{
+        article{  
+            p{
+    color:$ColorLetraCEL;
+}
+}
+}
+}
+
+.contcel{  
+    .contcel--flex{   
+        article{  
+            h2{
+    color:$ColorLetraCEL;
+    font-weight: 800;
+}
+}
+}
+}
+
+.contdomenergetico{
+
+padding: 1.5rem;
+border-radius: 5rem;
+background-color:$ColorContenedorCEL;
+
+
+}
+
+.contdomenergetico{  
+    article{  
+        h2{
+    color:$ColorLetraCEL;
+}
+}
+}
+
+
+.contdomenergetico{  
+    article{  
+        p{
+    color:$ColorLetraCEL;
+}
+}
+}
+
+.contcel__titulo{
+    text-align: center;
+}
+
+.contdomenergetico__titulo{
+    text-align: center;
+    font-weight: 800;
+}
+
+}
