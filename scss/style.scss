@@ -1,4 +1,7 @@
 @import"./base/variables";
+@import"./base/mixin";
+@import"./base/listas";
+@import"./base/extend";
 
 
 /*RESET*/
@@ -14,12 +17,34 @@ body{
     font-family:$FontFamily;
 }
 
-p, h2, h3{
-    color:$ColorLetras;
+
+
+/*-------------------SECTION | INDEX ----------------------------------*/
+
+.Colortitulo{
+    color:nth($list: $ColorTitulos, $n:1 );
+    font-weight: bold;
+}
+
+
+.video{
+    display: none;
+}
+
+.ContPropuestaValor{
+    color:nth($list: $ColorTitulos, $n:1 );
+    background-color:nth($list: $Colorfondo, $n:5);
+}
+
+.ColorQeselco, .ColorQescc{
+    color:nth($list: $ColorTitulos, $n:1 );
 
 }
 
-/*-------------------SECTION | INDEX ----------------------------------*/
+@Media screen and (min-width:600px){
+
+}
+
 
 /*ESTILOS-FOOTER*/
 
@@ -106,63 +131,12 @@ header{
     display: block;
 }
 
-
-main{
-
-    grid-template-columns:1fr 1fr;       
-    grid-template-rows: auto auto auto auto ;  
-
-    grid-template-areas:
-
-    "imagenytexto imagenytexto"
-    "propuestavalor propuestavalor"
-    "coontologico video"
-    "queesconversacion queesconversacion";
-
-
-
-    gap: 0.9rem;            
-
-    text-align: justify;  
-
-    margin-bottom: 2rem;
-
-    padding: 0.5rem;
-}
-
-
 .video{
     grid-area: video;
     align-self: center; 
 }
 
 
-main{  
-    section{  
-            h2{
-                font-size: 1.5rem; 
-                margin-bottom:1.5rem;
-}
-}
-}
-
-main{  
-    section{  
-        img{
-            width: 50%;
-
-}
-}
-}
-
-.imagenytexto{
-
-    display: flex;   
-
-    flex-direction: column;  
-
-    align-items: center; 
-}
 
 /*ESTILOS-FOOTER*/
 
@@ -239,10 +213,6 @@ iframe{
     padding: 0.5rem;
 }
 
-.imagenytexto{
-    padding: 0.5rem;
-    border-radius: 0.8rem; 
-}
 
 .queesconversacion{
     padding: 0.5rem;
@@ -299,33 +269,30 @@ iframe{
 
 .contsesiones__titulo{
     text-align: center;
-    color: rgb(18, 139, 18);
-    font-size: 2rem;
     margin-bottom: 1.5rem;
+    color:nth($list: $ColorTitulos, $n:1 );
 }
 
 .contsesiones__subtitulo{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1.5rem;
     
 }
 
-.contsesioncop__titulo{
-    font-size: 1.2rem;
+.contsesioncop__titulo, .contsesioncopf__titulo{    
     text-align: center;
+    font-weight: bold;
 }
 
 .contsesioncop--contfleximagen{
-    display: flex;
-    justify-content: center;
+    @extend %imagenesSesiones;    
 
-    margin-bottom: 0.5rem;
 }
 
 .contsesioncopf--contfleximagen{
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 0.5rem;
+    @extend %imagenesSesiones;    
 }
 
 .contsesioncop__imagen{
@@ -376,9 +343,51 @@ iframe{
     
 }
 
+.contsesioncop__imagen{
+    transition:0,5s;
+    border-radius: 0.3rem;
 }
 
+.contsesioncopf__imagen{
+    transition:0,5s;
+    border-radius: 0.3rem;
+}
+
+.contsesioncop__imagen:hover{
+    transform: scale(1.02);
+}
+
+.contsesioncopf__imagen:hover{
+    transform: scale(1.02);
+
+}
+
+.contsesiones__parrafo:hover{
+    font-weight: 900;
+}
+
+.contsesioncop__parrafo:hover{
+    font-weight: 900;
+}
+
+.contsesioncopf__parrafo:hover{
+    font-weight: 900;
+}
+
+
+}
+
+
 @Media screen and (min-width:1024px){
+
+
+.contsesioncop--contfleximagen{
+        height: 55%
+}
+    
+.contsesioncopf--contfleximagen{    
+        height: 55%;
+}
 
 .contsesioncop__imagen{
     opacity:0.8;
@@ -390,13 +399,14 @@ iframe{
 }
 
 .contsesioncop__imagen{
-    transition:1s ;
+    transition:0,5s ;
     border-radius: 0.3rem;
 }
 
 .contsesioncopf__imagen{
-    transition:1s;
+    transition:0,5s;
     border-radius: 0.3rem;
+
 }
 
 .contsesioncop__imagen:hover{
@@ -413,6 +423,7 @@ iframe{
 
 }
 
+
 }
 
 /*-------------------SECTION | QUIEN SOY ----------------------------------*/
@@ -421,23 +432,19 @@ iframe{
 /*ESTILOS-MAIN*/
 
 .contquiensoy{
-    display: grid;
+display: grid;
 
-    grid-template-columns:1fr;
-    grid-template-rows:auto auto auto ;
-
-
-    grid-template-areas: 
-    "conttitulo"
-    "contdescyfoto"
-    "continfoadicional";
+grid-template-columns:1fr;
+grid-template-rows:auto auto;
 
 
-    margin:0.3rem ;
-    
-    gap:.0.5rem ;
+grid-template-areas: 
+"conttitulo"
+"contdescyfoto"
+;
 
-    text-align: justify;
+gap:.0.5rem ;
+
 
 }
 
@@ -449,20 +456,41 @@ iframe{
     grid-area:contdescyfoto;
 }
 
-.continfoadicional{
-    grid-area:continfoadicional;
+
+.contdescripcion{
+        padding: 1rem;
+        h2{
+            font-size: 1.4rem;
+            text-align: center;
+            line-height: 2.8rem;
+            font-weight: bolder;
+            color: nth($list: $ColorTitulos, $n:8);
+        }    
 }
 
-.contdescyfoto__imagen{
-    width: 99%;
+
+
+
+
+.ContenedorQuienSoy{
+    margin-top: 2.5rem;
 }
 
-.contquiensoy{ 
-     div{
-        margin-bottom: 1rem;
-}
+.ContMecaracteriza{
+    h2{
+        color:nth($list: $ColorTitulos, $n:1 );
+        font-weight: bolder;
+    }
 }
 
+.Caracteristicas{
+    color: nth($list: $ColorTitulos, $n:8);
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+//------------------
 
 .contdescyfoto{   
         article{
@@ -478,51 +506,39 @@ iframe{
 }
 }
 
-@Media screen and (min-width:600px){
 
-.contdescyfoto{
-    display: flex;
-    
-    margin: 1rem;
-        
-    align-items: center;
-    
-}
+@Media screen and (min-width:600px){ 
 
-
-.contdescyfoto{  
-    article{  
-        p{
-            width: 90%;
-}
-}
-}
-
-.contdescyfoto {  
-    div{
-        width: 180%;
-}
-}
-
-}
-
-@Media screen and (min-width:1024px){
-
-
-.contdescyfoto{  
-    div{
-        width: 99%;
-    
+.contdescripcion{
+    h2:hover{
+        color: nth($list: $ColorTitulos, $n: 9);
     }
 }
 
-.contdescyfoto{  
-    article{  
-        p{
-            width: 95%;
 }
+
+
+@Media screen and (min-width:1024px){
+
+.contdescyfoto{
+    display: flex;
+
+    justify-content:space-evenly;
+
 }
+
+.contdescyfoto__imagen{
+    border: 1px solid black;  
+    height: 18rem;
+    border-radius: 1rem;
+    padding:1rem;
 }
+
+.contdescyfoto__imagen:hover{
+    background-color: nth($list: $Colorfondo, $n:8);
+}
+
+
 
 .conttitulo{
     margin-top: 1rem;

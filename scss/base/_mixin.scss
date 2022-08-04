@@ -1,0 +1,21 @@
+
+//SECTION - DISTINCIONES----
+
+//Mixin sin parametros
+@mixin FlexContCEL{
+    display: flex;
+    text-align: justify;
+    gap: 1rem;
+}
+
+
+//mixin com parametros
+@mixin PropiedadesCel ($padding, $border-radius) {
+    padding: $padding;
+    border-radius: $border-radius;
+    
+}
+
+
+
+//SECTION - DISTINCIONES----

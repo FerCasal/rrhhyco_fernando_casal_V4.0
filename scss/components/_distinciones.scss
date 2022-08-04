@@ -15,14 +15,13 @@
     "contmarcoconst"
     "contcel"
     "contdomenergetico"
-    
     ;
 
     text-align: justify;
 
     justify-content: center;
 
-    gap: 1rem;
+    gap:1rem;
 
     margin: 0.4rem;
 
@@ -32,30 +31,36 @@
     grid-area: conttitulo;
 }
 .contobservador{
-grid-area: contobservador;
+    grid-area: contobservador;
 }
 
 .contperssist{
-grid-area:contperssist;
+    grid-area:contperssist;
 }
 
 .contmarcoconst{
-grid-area:contmarcoconst;
+    grid-area:contmarcoconst;
 }
 
 .contcel{
-grid-area:contcel;
+    grid-area:contcel;
 }
 
 .contdomenergetico{
-grid-area:contdomenergetico;
+    grid-area:contdomenergetico;
 }
 
-.conttitulo{    
-    h2{
+.conttitulo__titulo, .contobservador__titulo, .contperssist__titulo, .contmarcoconst__titulo, .contcel__titulo,.contdomenergetico__titulo, .Titulo__pricipalesDist{
+    color:nth($list: $ColorTitulos, $n:1 );
+    font-weight:900;
+
+}
+
+
+.conttitulo__titulo{
     text-align: center;
     margin-bottom: 1rem;
-}
+
 }
 
 .contobservador__titulo{
@@ -70,6 +75,11 @@ grid-area:contdomenergetico;
     text-align: center  ;
 }
 
+.conttitulo__fondo{
+    background-color:nth($list: $Colorfondo, $n:5);
+    
+}
+
 /*---PROPIEDAD PARA BOOTSTRAP---*/
 .ContenedorPrinpDistinciones{
     margin-bottom: 3rem;
@@ -77,57 +87,83 @@ grid-area:contdomenergetico;
 }
 /*---PROPIEDAD PARA BOOTSTRAP---*/
 
+.contcel__titulo{
+    text-align: center;
+    color:nth($list: $ColorTitulos, $n:5) ;
+    background-color: nth($list: $Colorfondo, $n:6 );
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+    border-radius: 0.3rem;
 
+}
+
+.contdomenergetico__titulo{
+    text-align: center;
+    color: nth($list: $ColorTitulos, $n: 5);
+    
+
+}
+
+.contenerg__titulo{
+    background-color: nth($list: $Colorfondo, $n:4 );
+    border-radius: 5rem;
+}
+
+.FlexItem{
+    border-radius: 5.5rem;
+    padding: 1rem;
+}
+
+.conttitulo, .contobservador, .contperssist, .contmarcoconst, .contdomenergetico{
+    padding:1rem;
+}
 
 
 @Media screen and (min-width:600px){
 
 
     .contcel--flex{
-        display: flex;
+        @include FlexContCEL
+    }
 
-        text-align: justify;
+    .conttitulo__parrafo:hover{
+        font-weight: 900;
+    }
 
-        gap: 1rem;
+    .contobservador__parrafo:hover{
+        font-weight: 900;
+    }
 
+    .contperssist__parrafo:hover{
+        font-weight: 900;
+    }
 
+    .contmarcoconst__parrafo:hover{
+        font-weight: 900;
+    }
+    
+    .contcel__parrafo:hover{
+        font-weight: 900;
+    }
+
+    .contdomenergetico__parrafo:hover{
+        font-weight: 900;
     }
 
 }
 
 @Media screen and (min-width:1024px){
 
+
 .contcel{ 
     div{        
-        article{    
-    padding: 1.5rem;
-    border-radius: 5rem;
+        article{
+            @include PropiedadesCel(1.5rem, 5rem);
     background-color: $ColorContenedorCEL;
     }
     }
 }
 
-
-.contcel {
-    .contcel--flex{
-        article{  
-            p{
-    color:$ColorLetraCEL;
-}
-}
-}
-}
-
-.contcel{  
-    .contcel--flex{   
-        article{  
-            h2{
-    color:$ColorLetraCEL;
-    font-weight: 800;
-}
-}
-}
-}
 
 .contdomenergetico{
 
@@ -138,30 +174,21 @@ background-color:$ColorContenedorCEL;
 
 }
 
-.contdomenergetico{  
-    article{  
-        h2{
-    color:$ColorLetraCEL;
-}
-}
-}
-
-
-.contdomenergetico{  
-    article{  
-        p{
-    color:$ColorLetraCEL;
-}
-}
-}
 
 .contcel__titulo{
     text-align: center;
+
 }
 
 .contdomenergetico__titulo{
     text-align: center;
-    font-weight: 800;
+    
 }
+
+
+.fondo{
+    background-color: rgb(231, 226, 226);
+}
+
 
 }
