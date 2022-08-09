@@ -44,11 +44,11 @@
 
 <header>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5 fixed-top" style="background-color: rgb(76, 141, 163);">
 
         <div class="container-fluid">
 
-            <a class="navbar-brand text-success fs-3 fw-bolder border-bottom border-sucess shadow-none p-3 rounded animate__animated animate__fadeInUpBig" href="../index.html">Coaching y Algo +</a>
+            <a class="navbar-brand border-bottom border-5 fs-3 fw-bolder p-3 rounded animate__animated animate__fadeInUpBig" href="../index.html" style="color:rgb(255, 255, 255);">Coaching y Algo +</a>
                 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,21 +56,23 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0"><li class="nav-item text-center" data-aos="fade-left" data-aos-duration="900"><a class="nav-link text-success fw-semibold text-uppercase fs-5 border border-success rounded-pill border-2 m-1" href="../pages/quiensoy.html">Quien Soy</a></li>
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item text-center border-end border-bottom border-start border-3 m-2" data-aos="fade-left" data-aos-duration="900"><a class="nav-link fw-semibold text-uppercase fs-5 m-1" style="color:white;" href="../pages/quiensoy.html">Quien Soy</a></li>
 
-                    <li class="nav-item text-center" data-aos="fade-left" data-aos-duration="800"><a class="nav-link text-success fw-semibold text-uppercase fs-5 border border-success rounded-pill border-2 m-1" href="../index.html">Home</a></li>
+                    <li class="nav-item text-center border-end border-bottom border-start border-3 m-2" data-aos="fade-left" data-aos-duration="800"><a class="nav-link fw-semibold text-uppercase fs-5 m-1" style="color:white;" href="../index.html">Home</a></li>
 
-                    <li class="nav-item text-center" data-aos="fade-left" data-aos-duration="750"><a class="nav-link text-success fw-semibold text-uppercase fs-5 border border-success rounded-pill border-2 m-1" href="../pages/sesiones.html">Sesiones</a></li>
+                    <li class="nav-item text-center border-end border-bottom border-start border-3 m-2" data-aos="fade-left" data-aos-duration="750"><a class="nav-link fw-semibold text-uppercase fs-5 m-1" style="color:white;" href="../pages/sesiones.html">Sesiones</a></li>
 
-                    <li class="nav-item text-center" data-aos="fade-left" data-aos-duration="700"><a class="nav-link text-success fw-semibold text-uppercase fs-5 border border-success rounded-pill border-2 m-1" href="../pages/distinciones.html">Distinciones</a></li>
+                    <li class="nav-item text-center border-end border-bottom border-start border-3 m-2" data-aos="fade-left" data-aos-duration="700"><a class="nav-link fw-semibold text-uppercase fs-5 m-1" style="color:white;" href="../pages/distinciones.html">Distinciones</a></li>
 
-                    <li class="nav-item text-center" data-aos="fade-left" data-aos-duration="500"><a class="nav-link text-success fw-semibold text-uppercase fs-5 border border-success rounded-pill border-2 m-1" href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item text-center border-end border-bottom border-start border-3 m-2" data-aos="fade-left" data-aos-duration="500"><a class="nav-link fw-semibold text-uppercase fs-5 m-1" style="color:white;" href="../pages/contacto.html">Contacto</a></li>
 
                 </ul>
 
             </div>
 
         </div>
+
     </div>
 
     
@@ -81,96 +83,102 @@
 <!--------------------------------------------------------FIN-NAVBAR------------------------------------------------------->
 
 
+
 <!----------------------------------------------FORMULARIO DE CONTACTO-BOOTSTRAP-------------------------------------------->
 
-<form action="" data-aos="flip-left" data-aos-duration="1000"> 
-    
-    <fieldset class="m-2">
-    
-        <div class="container form-control border-danger">
-            
-            <div class="row mt-2 mb-3">
+<main>
 
-                <h1 for="" class="col-12 text-center text-uppercase fs-4 fw-bolder text-black">contactame</h1>
+    <form action="" data-aos="flip-left" data-aos-duration="1000"> 
+        
+        <fieldset class="m-2">
+        
+            <div class="container form-control border-danger">
+                
+                <div class="row mt-2 mb-3">
 
-            </div>
+                    <h1 for="" class="col-sm-12 col-md-12 col-lg-12 text-center text-uppercase fs-4 fw-bolder text-black">contactame</h1>
 
-
-            <div class="row">
-
-                <div class="mb-3 col-6">
-                    <label for="apellido" class="form-label text-black fw-semibold">Apellido/s</label>
-                    <input type="text" class="form-control form-control-sm" id="" placeholder="Apellido" required>
                 </div>
 
-                <div class="mb-3 col-6">
-                    <label for="nombre" class="form-label text-black fw-semibold">Nombre/s</label>
-                    <input type="text" class="form-control form-control-sm" id="" placeholder="Nombre" required>
+
+                <div class="row">
+
+                    <div class="mb-3 col-sm-6 col-md-6 col-lg-6">
+                        <label for="apellido" class="form-label text-black fw-semibold">Apellido/s</label>
+                        <input type="text" class="form-control form-control-sm" id="" placeholder="Apellido" required>
+                    </div>
+
+                    <div class="mb-3 col-sm-6 col-md-6 col-lg-6">
+                        <label for="nombre" class="form-label text-black fw-semibold">Nombre/s</label>
+                        <input type="text" class="form-control form-control-sm" id="" placeholder="Nombre" required>
+                    </div>
+
                 </div>
 
-            </div>
 
+                <div class="row"> 
+                    <div class="mb-3 col-sm-6 col-md-6 col-lg-6">
+                        <label for="fechanac" class="form-label text-black fw-semibold">Fecha de nacimiento</label>
+                        <input type="date" class="form-control form-control-sm" id="" placeholder="" required>
+                    </div>
 
-            <div class="row"> 
-                <div class="mb-3 col-6">
-                    <label for="fechanac" class="form-label text-black fw-semibold">Fecha de nacimiento</label>
-                    <input type="date" class="form-control form-control-sm" id="" placeholder="" required>
+                    <div class="mb-3 col-sm-6 col-md-6 col-lg-6">
+                        <label for="nacionalidad" class="form-label text-black fw-semibold">Nacionalidad</label>
+                        <select class="form-select form-select-sm aria-label="Default select example" required>
+                            <option value="1">Seleccionar</option>
+                            <option value="1">Argentina</option>
+                            <option value="2">Bolivia</option>
+                            <option value="3">Brasil</option>
+                            <option value="3">Chile</option>
+                            <option value="3">Colombia</option>
+                            <option value="3">Ecuador</option>
+                            <option value="3">Paraguay</option>
+                            <option value="3">Peru</option>
+                            <option value="3">Uruguay</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="mb-3 col-6">
-                    <label for="nacionalidad" class="form-label text-black fw-semibold">Nacionalidad</label>
-                    <select class="form-select form-select-sm aria-label="Default select example" required>
-                        <option value="1">Seleccionar</option>
-                        <option value="1">Argentina</option>
-                        <option value="2">Bolivia</option>
-                        <option value="3">Brasil</option>
-                        <option value="3">Chile</option>
-                        <option value="3">Colombia</option>
-                        <option value="3">Ecuador</option>
-                        <option value="3">Paraguay</option>
-                        <option value="3">Peru</option>
-                        <option value="3">Uruguay</option>
-                      </select>
-                </div>
-            </div>
 
+                <div class=row> 
+                    <div class="mb-3 col-sm-6 col-md-6 col-lg-6">
+                        <label for="email" class="form-label text-black fw-semibold">Email</label>
+                        <input type="email" class="form-control form-control-sm" id="" placeholder="name@example.com" required>
+                    </div>
 
-            <div class=row> 
-                <div class="mb-3 col-6">
-                    <label for="email" class="form-label text-black fw-semibold">Email</label>
-                    <input type="email" class="form-control form-control-sm" id="" placeholder="name@example.com" required>
+                    <div class="mb-3 col-sm-6 col-md-6 col-lg-6">
+                        <label for="telcontacto" class="form-label text-black fw-semibold">Telefono de contacto</label>
+                        <input type="number" class="form-control form-control-sm" id="" placeholder="Codigo de area" required>
+                        <input type="number" class="form-control form-control-sm" id="" placeholder="Telefono/Celular" required>
+                    </div>       
                 </div>
 
-                <div class="mb-3 col-6">
-                    <label for="telcontacto" class="form-label text-black fw-semibold">Telefono de contacto</label>
-                    <input type="number" class="form-control form-control-sm" id="" placeholder="Codigo de area" required>
-                    <input type="number" class="form-control form-control-sm" id="" placeholder="Telefono/Celular" required>
-                </div>       
-            </div>
 
-
-            <div class="row">
-                <div class="mb-3 col-12">
-                    <label for="comentarios" class="form-label text-black fw-semibold">Comentarios y preguntas</label>
-                    <textarea class="form-control" id="" rows="3" placeholder="Comente aqui..." ></textarea>
-                    
+                <div class="row">
+                    <div class="mb-3 col-12">
+                        <label for="comentarios" class="form-label text-black fw-semibold">Comentarios y preguntas</label>
+                        <textarea class="form-control" id="" rows="3" placeholder="Comente aqui..." ></textarea>
+                        
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="row"> 
-                <div class="mb-3 col-12 d-flex justify-content-center gap-2">
-                    <input class="btn btn-warning " type="submit" name="" id="" value="Enviar">
-                    <input class="btn btn-warning" type="reset" value="Borrar datos">
+                <div class="row"> 
+                    <div class="mb-3 col-12 d-flex justify-content-center gap-2">
+                        <input class="btn btn-warning " type="submit" name="" id="" value="Enviar">
+                        <input class="btn btn-warning" type="reset" value="Borrar datos">
+                    </div>
                 </div>
-            </div>
-            
+                
 
-        </div> 
+            </div> 
 
-    </fieldset>
+        </fieldset>
 
-</form>
+    </form>
+
+
+</main>
 
 <!---------------------------------------------FIN-FORMULARIO DE CONTACTO--------------------------------------------------->
 
@@ -178,20 +186,20 @@
 
 
 <!---------------------------------------------------------FOOTER-BOOTSTRAP--------------------------------------------------->
-<footer class="container.fluid">
+<footer class="container-fluid ContenedorFooter">
 
     <div class="row"> 
-        <h3 class="text-center col-12">Seguinos en las redes sociales</h3>
-    </div>
-
-    <div class="row d-flex justify-content-center"> 
-    <a class="w-25" href="https://m.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="icono facebook"></a>
-    <a class="w-25" href="https://www.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt="icono whatsapp"></a>
-    <a class="w-25" href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="iconoinstagram"></a>
+        <h4 class="col-12 text-center fw-bold mb-2 mt-2">Seguinos en las redes sociales</h4>
     </div>
 
     <div class="row"> 
-    <p class="piedepagina__paragraph text-center col-12">Todo los derechos reservados <span class="barra"> |</span> 2022</p>
+    <a class="col-4 text-end" href="https://m.facebook.com/" target="_blank"><img src="../img/Logo_Facebook.png" alt="Logo_facebook"></a>
+    <a class="col-4 text-center" href="https://www.whatsapp.com/" target="_blank"><img src="../img/Logo_whatsapp.png" alt="Logo_whatsapp"></a>
+    <a class="col-4 text-start" href="https://www.instagram.com/" target="_blank"><img src="../img/Logo_instagram.png" alt="Logo_instagram"></a>
+    </div>
+
+    <div class="row"> 
+    <p class="col-12 text-center fw-bolder mt-2 mb-0">Todo los derechos reservados | 2022</p>
     </div>
 
 </footer>

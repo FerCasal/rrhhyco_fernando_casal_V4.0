@@ -3,17 +3,23 @@
   justify-content: center;
   margin-bottom: 0.5rem; }
 
-/*RESET*/
+/*---------Reset--------*/
 * {
   margin: 0PX;
   padding: 0%;
   box-sizing: border-box; }
 
-/*ESTILOS-BODY*/
+/*---------Reset--------*/
+/*Estilo---BODY*/
 body {
   font-family: "Roboto", sans-serif; }
 
+main {
+  margin-top: 8rem; }
+
+/*Estilo---BODY*/
 /*-------------------SECTION | INDEX ----------------------------------*/
+/*-------------------MAIN--------------------*/
 .Colortitulo {
   color: #fbbc05;
   font-weight: bold; }
@@ -23,74 +29,29 @@ body {
 
 .ContPropuestaValor {
   color: #fbbc05;
-  background-color: #a46497; }
+  background-color: #a46497;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .ColorQeselco, .ColorQescc {
   color: #fbbc05; }
 
-@Media screen and (min-width:600px) {}/*ESTILOS-FOOTER*/
-footer a img {
-  width: 40%; }
+/*------FOOTER------*/
+.ContenedorFooter {
+  background-color: #c2bdbd;
+  /*------FOOTER------*/ }
 
-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-flow: 1fr;
-  grid-area: footer;
-  justify-items: center;
-  background-color: rgba(128, 128, 128, 0.7);
-  padding: 0.5rem; }
-
-footer a {
-  display: flex;
-  justify-content: center;
-  margin: 0.5rem; }
-
-footer h3 {
-  color: white; }
-
-footer p {
-  color: white; }
-
-/* --- BREAK POINT PARA TABLET --- */
 @Media screen and (min-width:600px) {
-  /*ESTILOS-HEADER*/
-  header div div h1 a {
-    font-size: 2.5rem; }
-  header nav ul li {
-    font-size: 1.2rem;
-    padding: 0.3rem; }
-  /*ESTILOS-MAIN*/
+  .ColorTituloVideo {
+    color: #fbbc05;
+    font-weight: bolder; }
   .video {
     display: block; }
   .video {
     grid-area: video;
-    align-self: center; }
-  /*ESTILOS-FOOTER*/
-  footer div {
-    display: flex;
-    width: 50%; }
-  footer div a img {
-    min-width: 30%; } }
+    align-self: center; } }
 
-/* --- BREAK POINT PARA DESKTOP --- */
 @Media screen and (min-width:1024px) {
-  /*ESTILOS-HEADER*/
-  header nav ul li {
-    padding: 0.3rem; }
-  /*ESTILOS-MAIN*/
-  .propuestavalor {
-    width: 95%; }
-  .coontologico {
-    width: 95%; }
-  .queesconversacion {
-    width: 95%; }
-  .coontologico {
-    padding: 0.5rem;
-    border-radius: 0.8rem; }
-  .propuestavalor {
-    padding: 0.5rem;
-    border-radius: 0.8rem; }
   .video {
     padding: 0.5rem;
     border-radius: 0.8rem; }
@@ -99,10 +60,21 @@ footer p {
     padding: 0.5rem; }
   .queesconversacion {
     padding: 0.5rem;
-    border-radius: 0.8rem; } }
+    border-radius: 0.8rem; }
+  .contcarousel {
+    margin-top: 1rem; }
+  .contPropuestaDeValor--marginTop {
+    border: 1PX solid black; }
+  .navbar-nav .nav-link:hover {
+    transition: 0.5s;
+    background-color: #fbbc05; }
+  .navbar-brand:hover {
+    background-color: #fbbc05; } }
 
+/*-------------------MAIN--------------------*/
+/*------------------FIN SECTION | INDEX ----------------------------------*/
 /*-------------------SECTION | SESIONES ----------------------------------*/
-/*ESTILOS-MAIN*/
+/*-------------------MAIN--------------------*/
 .mainsesionesgrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -128,7 +100,8 @@ footer p {
 .contsesiones__titulo {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #fbbc05; }
+  color: #fbbc05;
+  font-weight: bold; }
 
 .contsesiones__subtitulo {
   font-size: 1.2rem;
@@ -203,6 +176,8 @@ footer p {
   .ImgsSesiones:hover {
     background-color: #c4d3ef; } }
 
+/*-------------------MAIN--------------------*/
+/*------------------FIN-SECTION | SESIONES ----------------------------------*/
 /*-------------------SECTION | QUIEN SOY ----------------------------------*/
 /*ESTILOS-MAIN*/
 .contquiensoy {
@@ -213,7 +188,8 @@ footer p {
   gap: 0 0.5rem; }
 
 .conttitulo {
-  grid-area: conttitulo; }
+  grid-area: conttitulo;
+  margin-top: 1rem; }
 
 .contdescyfoto {
   grid-area: contdescyfoto; }
@@ -240,6 +216,10 @@ footer p {
   font-size: 1.3rem;
   text-transform: uppercase; }
 
+.contdescyfoto__imagen img {
+  border-radius: 3rem;
+  box-shadow: 5px 5px 15px 0px blueviolet; }
+
 .contdescyfoto article {
   margin-bottom: 1rem; }
 
@@ -256,10 +236,10 @@ footer p {
     display: flex;
     justify-content: space-evenly; }
   .contdescyfoto__imagen {
-    border: 1px solid black;
     height: 18rem;
     border-radius: 1rem;
-    padding: 1rem; }
+    padding: 1rem;
+    box-shadow: 5px 5px 15px 0px blueviolet; }
   .contdescyfoto__imagen:hover {
     background-color: #b79edb; }
   .conttitulo {
@@ -279,13 +259,13 @@ footer p {
   .continfoadicional {
     border-radius: 3rem;
     padding: 1rem; }
-  /*BOOTSTRAP*/
   .ImgsMeCaracteriza {
     transition: 0.3s; }
   .ImgsMeCaracteriza:hover {
-    transform: scale(1.1); }
-  /*BOOTSTRAP*/ }
+    transform: scale(1.1); } }
 
+/*-----------ESTILOS-MAIN------------*/
+/*------------------FIN-SECTION | QUIEN SOY ----------------------------------*/
 /*------------------- SECTION | DISTINCIONES ----------------------------------*/
 /*ESTILOS-MAIN*/
 .contdintinciones {
@@ -397,18 +377,6 @@ footer p {
   .contdomenergetico__titulo {
     text-align: center; }
   .fondo {
-    background-color: #e7e2e2; } }
-
-/*------------------- SECTION | CONTACTO ----------------------------------*/
-/*ESTILOS-MAIN*/
-/*----------------------------------------------------PROPIEDADES-BOOTSTRAP----------------------------------------------------*/
-/*------------------- SECTION | MAIN ----------------------------------*/
-.contcarousel {
-  margin-top: 1rem; }
-
-.contPropuestaDeValor--marginTop {
-  margin: 1rem; }
-
-/*------------------- SECTION | DISTINCIONES ----------------------------------*/
-.ContenedorPrinpDistinciones {
-  margin-top: 4rem; }
+    background-color: #e7e2e2; }
+  .ContenedorPrinpDistinciones {
+    margin-top: 4rem; } }
