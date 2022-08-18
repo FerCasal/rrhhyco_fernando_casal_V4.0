@@ -3,6 +3,159 @@
   justify-content: center;
   margin-bottom: 0.5rem; }
 
+/*------------------- SECTION | DISTINCIONES ----------------------------------*/
+/*ESTILOS-MAIN*/
+.contdintinciones {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "conttitulo" "contobservador"  "contperssist" "contmarcoconst" "contcel" "contdomenergetico";
+  text-align: justify;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.4rem; }
+
+.conttitulo {
+  grid-area: conttitulo; }
+
+.contobservador {
+  grid-area: contobservador; }
+
+.contperssist {
+  grid-area: contperssist; }
+
+.contmarcoconst {
+  grid-area: contmarcoconst; }
+
+.contcel {
+  grid-area: contcel; }
+
+.contdomenergetico {
+  grid-area: contdomenergetico; }
+
+.conttitulo__titulo, .contobservador__titulo, .contperssist__titulo, .contmarcoconst__titulo, .contcel__titulo, .contdomenergetico__titulo, .Titulo__pricipalesDist {
+  color: #fbbc05;
+  font-weight: 900; }
+
+.conttitulo__titulo {
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.contobservador__titulo {
+  text-align: center; }
+
+.contperssist__titulo {
+  text-align: center; }
+
+.contmarcoconst__titulo {
+  text-align: center; }
+
+.conttitulo__fondo {
+  background-color: #a46497; }
+
+/*---PROPIEDAD PARA BOOTSTRAP---*/
+.ContenedorPrinpDistinciones {
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
+/*---PROPIEDAD PARA BOOTSTRAP---*/
+.contcel__titulo {
+  text-align: center;
+  color: #fef8f8;
+  background-color: #e93e6e;
+  margin-bottom: 1.3rem;
+  margin-top: 1.3rem;
+  border-radius: 0.3rem; }
+
+.contdomenergetico__titulo {
+  text-align: center;
+  color: #fef8f8; }
+
+.contenerg__titulo {
+  background-color: #43b4f9;
+  border-radius: 5rem; }
+
+.FlexItem {
+  border-radius: 5.5rem;
+  padding: 1rem; }
+
+.conttitulo, .contobservador, .contperssist, .contmarcoconst, .contdomenergetico {
+  padding: 1rem; }
+
+@Media screen and (min-width:600px) {
+  .contcel--flex {
+    display: flex;
+    text-align: justify;
+    gap: 1rem; }
+  .conttitulo__parrafo:hover {
+    font-weight: 900; }
+  .contobservador__parrafo:hover {
+    font-weight: 900; }
+  .contperssist__parrafo:hover {
+    font-weight: 900; }
+  .contmarcoconst__parrafo:hover {
+    font-weight: 900; }
+  .contcel__parrafo:hover {
+    font-weight: 900; }
+  .contdomenergetico__parrafo:hover {
+    font-weight: 900; } }
+
+@Media screen and (min-width:1024px) {
+  .contcel div article {
+    padding: 1.5rem;
+    border-radius: 5rem;
+    background-color: white; }
+  .contdomenergetico {
+    padding: 1.5rem;
+    border-radius: 5rem;
+    background-color: white; }
+  .contcel__titulo {
+    text-align: center; }
+  .contdomenergetico__titulo {
+    text-align: center; }
+  .fondo {
+    background-color: #e7e2e2; }
+  .ContenedorPrinpDistinciones {
+    margin-top: 4rem; } }
+
+.ContenedorCertificados {
+  display: none; }
+
+@Media screen and (min-width:600px) {
+  .ContenedorCertificados {
+    display: block; }
+  .ContenedorCertificados {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "TituloCertificados" "CertificadoUno" "CertificadoDos" "Certificadotres";
+    justify-items: center;
+    margin: 3rem;
+    gap: 3.5rem; }
+  .TituloCertificados {
+    grid-area: TituloCertificados;
+    margin-bottom: 1rem;
+    text-transform: uppercase; }
+    .TituloCertificados h2 {
+      font-weight: bold;
+      color: #fbbc05; }
+  .CertificadoUno {
+    grid-area: CertificadoUno;
+    box-shadow: 1rem 1rem 2rem; }
+  .CertificadoDos {
+    grid-area: CertificadoDos;
+    box-shadow: 1rem 1rem 2rem; }
+  .Certificadotres {
+    grid-area: Certificadotres;
+    box-shadow: 1rem 1rem 2rem; } }
+
+@Media screen and (min-width:1024px) {
+  .ContenedorCertificados {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "TituloCertificados TituloCertificados" "CertificadoUno     CertificadoDos" "Certificadotres    Certificadotres"; } }
+
 /*---------Reset--------*/
 * {
   margin: 0PX;
@@ -266,117 +419,3 @@ main {
 
 /*-----------ESTILOS-MAIN------------*/
 /*------------------FIN-SECTION | QUIEN SOY ----------------------------------*/
-/*------------------- SECTION | DISTINCIONES ----------------------------------*/
-/*ESTILOS-MAIN*/
-.contdintinciones {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas: "conttitulo" "contobservador"  "contperssist" "contmarcoconst" "contcel" "contdomenergetico";
-  text-align: justify;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0.4rem; }
-
-.conttitulo {
-  grid-area: conttitulo; }
-
-.contobservador {
-  grid-area: contobservador; }
-
-.contperssist {
-  grid-area: contperssist; }
-
-.contmarcoconst {
-  grid-area: contmarcoconst; }
-
-.contcel {
-  grid-area: contcel; }
-
-.contdomenergetico {
-  grid-area: contdomenergetico; }
-
-.conttitulo__titulo, .contobservador__titulo, .contperssist__titulo, .contmarcoconst__titulo, .contcel__titulo, .contdomenergetico__titulo, .Titulo__pricipalesDist {
-  color: #fbbc05;
-  font-weight: 900; }
-
-.conttitulo__titulo {
-  text-align: center;
-  margin-bottom: 1rem; }
-
-.contobservador__titulo {
-  text-align: center; }
-
-.contperssist__titulo {
-  text-align: center; }
-
-.contmarcoconst__titulo {
-  text-align: center; }
-
-.conttitulo__fondo {
-  background-color: #a46497; }
-
-/*---PROPIEDAD PARA BOOTSTRAP---*/
-.ContenedorPrinpDistinciones {
-  margin-bottom: 3rem;
-  margin-top: 3rem; }
-
-/*---PROPIEDAD PARA BOOTSTRAP---*/
-.contcel__titulo {
-  text-align: center;
-  color: #fef8f8;
-  background-color: #e93e6e;
-  margin-bottom: 1.3rem;
-  margin-top: 1.3rem;
-  border-radius: 0.3rem; }
-
-.contdomenergetico__titulo {
-  text-align: center;
-  color: #fef8f8; }
-
-.contenerg__titulo {
-  background-color: #43b4f9;
-  border-radius: 5rem; }
-
-.FlexItem {
-  border-radius: 5.5rem;
-  padding: 1rem; }
-
-.conttitulo, .contobservador, .contperssist, .contmarcoconst, .contdomenergetico {
-  padding: 1rem; }
-
-@Media screen and (min-width:600px) {
-  .contcel--flex {
-    display: flex;
-    text-align: justify;
-    gap: 1rem; }
-  .conttitulo__parrafo:hover {
-    font-weight: 900; }
-  .contobservador__parrafo:hover {
-    font-weight: 900; }
-  .contperssist__parrafo:hover {
-    font-weight: 900; }
-  .contmarcoconst__parrafo:hover {
-    font-weight: 900; }
-  .contcel__parrafo:hover {
-    font-weight: 900; }
-  .contdomenergetico__parrafo:hover {
-    font-weight: 900; } }
-
-@Media screen and (min-width:1024px) {
-  .contcel div article {
-    padding: 1.5rem;
-    border-radius: 5rem;
-    background-color: white; }
-  .contdomenergetico {
-    padding: 1.5rem;
-    border-radius: 5rem;
-    background-color: white; }
-  .contcel__titulo {
-    text-align: center; }
-  .contdomenergetico__titulo {
-    text-align: center; }
-  .fondo {
-    background-color: #e7e2e2; }
-  .ContenedorPrinpDistinciones {
-    margin-top: 4rem; } }
