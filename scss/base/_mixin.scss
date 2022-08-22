@@ -16,6 +16,29 @@
     
 }
 
+@mixin alineacion {
+    text-align: center;
+    
+}
 
 
 //SECTION - DISTINCIONES----
+
+
+//SECTION - SESIONES----
+
+@mixin transform ($transform) {
+    transform: $transform;
+    -moz-transform: $transform ;
+    -webkit-transform: $transform ;
+    -o-transform: $transform ;
+    -khtml-transform: $transform;
+    -ms-transform: $transform ;
+}
+
+//SECTION - SESIONES----
+
+
+
+
+

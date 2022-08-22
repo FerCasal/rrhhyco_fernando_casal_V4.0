@@ -52,10 +52,9 @@
 
 .conttitulo__titulo, .contobservador__titulo, .contperssist__titulo, .contmarcoconst__titulo, .contcel__titulo,.contdomenergetico__titulo, .Titulo__pricipalesDist{
     color:nth($list: $ColorTitulos, $n:1 );
-    font-weight:900;
+    @extend %resaltarparrafo;
 
 }
-
 
 .conttitulo__titulo{
     text-align: center;
@@ -64,15 +63,15 @@
 }
 
 .contobservador__titulo{
-    text-align: center;
+    @include alineacion;
 }
 
 .contperssist__titulo{
-    text-align: center;
+    @include alineacion;
 }
 
 .contmarcoconst__titulo{
-    text-align: center  ;
+    @include alineacion;
 }
 
 .conttitulo__fondo{
@@ -127,27 +126,27 @@
     }
 
     .conttitulo__parrafo:hover{
-        font-weight: 900;
+        @extend %resaltarparrafo;
     }
 
     .contobservador__parrafo:hover{
-        font-weight: 900;
+        @extend %resaltarparrafo;
     }
 
     .contperssist__parrafo:hover{
-        font-weight: 900;
+        @extend %resaltarparrafo;
     }
 
     .contmarcoconst__parrafo:hover{
-        font-weight: 900;
+        @extend %resaltarparrafo;
     }
     
     .contcel__parrafo:hover{
-        font-weight: 900;
+        @extend %resaltarparrafo;
     }
 
     .contdomenergetico__parrafo:hover{
-        font-weight: 900;
+        @extend %resaltarparrafo;
     }
 
 }
@@ -192,7 +191,7 @@ background-color:$ColorContenedorCEL;
 
 
 .ContenedorPrinpDistinciones{
-    margin-top: 4rem;
+    margin-top: 1.5rem;
 }
 
 

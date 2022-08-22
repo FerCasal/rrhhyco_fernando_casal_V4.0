@@ -1,0 +1,191 @@
+/*-------------------SECTION | SESIONES ----------------------------------*/
+/*-------------------MAIN--------------------*/
+
+.mainsesionesgrid{
+    display: grid;
+
+
+    grid-template-columns:1fr;
+    grid-template-rows:auto auto auto;
+
+    grid-template-areas: 
+    "contsesiones"
+    "contsesioncop"
+    "contsesioncopf"
+    ;
+
+    padding: 0.5rem;
+
+    gap:1rem;
+
+    justify-items:start;
+
+    text-align: justify;
+
+}
+
+
+.contsesiones{
+    grid-area:contsesiones;
+    padding: 0.5rem;
+    
+}
+
+.contsesioncop{
+    grid-area:contsesioncop ;
+    padding: 0.5rem;
+}
+
+.contsesioncopf{
+    grid-area: contsesioncopf;
+    padding: 0.5rem;
+}
+
+.contsesiones__titulo{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color:nth($list: $ColorTitulos, $n:1 );
+    font-weight: bold;
+}
+
+.contsesiones__subtitulo{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1.5rem;
+    
+}
+
+.contsesioncop__titulo, .contsesioncopf__titulo{    
+    text-align: center;
+    font-weight: bold;
+}
+
+.contsesioncop--contfleximagen{
+    @extend %imagenesSesiones;    
+
+}
+
+.contsesioncopf--contfleximagen{
+    @extend %imagenesSesiones;    
+}
+
+.contsesioncop__imagen{
+    width: 90%;
+    border-radius: 20rem;
+}
+
+.contsesioncopf__imagen{
+    width: 90%;
+    border-radius: 20rem;
+}
+
+
+@Media screen and (min-width:600px){
+
+.mainsesionesgrid{
+    display: grid;
+    
+    
+    grid-template-columns:1fr 1fr; 
+    grid-template-rows:auto auto;
+    
+    grid-template-areas: 
+    "contsesiones contsesiones"
+    "contsesioncop contsesioncopf"
+        
+    ;
+    
+    padding: 0.5rem;
+    
+    gap:1rem;
+    
+    justify-items:start;
+    
+    text-align: justify;
+    
+}
+
+.contsesioncop__imagen{
+    width: 100%;
+    border-radius: 0%;
+    
+}
+
+.contsesioncopf__imagen{
+    width: 100%;
+    border-radius: 0%;
+    
+}
+
+.contsesioncop__imagen{
+    transition:0,5s;
+    border-radius: 0.3rem;
+}
+
+.contsesioncopf__imagen{
+    transition:0,5s;
+    border-radius: 0.3rem;
+}
+
+.contsesioncop__imagen:hover{
+    @include transform (scale(1.02));
+}
+
+.contsesioncopf__imagen:hover{
+    @include transform (scale(1.02));
+
+}
+
+.contsesiones__parrafo:hover{
+    font-weight: 900;
+}
+
+.contsesioncop__parrafo:hover{
+    font-weight: 900;
+}
+
+.contsesioncopf__parrafo:hover{
+    font-weight: 900;
+}
+}
+
+@Media screen and (min-width:1024px){
+
+.contsesioncop--contfleximagen{
+        height: 55%
+}
+    
+.contsesioncopf--contfleximagen{    
+        height: 55%;
+}
+
+.contsesioncop__imagen{
+    opacity:0.8;
+}
+
+.contsesioncopf__imagen{
+    opacity:0.8;
+    
+}
+
+.contsesioncop__imagen{
+    transition:0,5s ;
+    border-radius: 0.3rem;
+}
+
+.contsesioncopf__imagen{
+    transition:0,5s;
+    border-radius: 0.3rem;
+
+}
+
+
+.ImgsSesiones:hover{
+    background-color: rgb(196, 211, 239);
+
+}
+}
+
+/*-------------------MAIN--------------------*/
+/*------------------FIN-SECTION | SESIONES ----------------------------------*/

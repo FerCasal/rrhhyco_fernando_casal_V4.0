@@ -1,8 +1,86 @@
+/*---------Reset--------*/
+* {
+  margin: 0PX;
+  padding: 0%;
+  box-sizing: border-box; }
+
+/*---------Reset--------*/
 .contsesioncop--contfleximagen, .contsesioncopf--contfleximagen {
   display: flex;
   justify-content: center;
   margin-bottom: 0.5rem; }
 
+.conttitulo__titulo, .contobservador__titulo, .contperssist__titulo, .contmarcoconst__titulo, .contcel__titulo, .contdomenergetico__titulo, .Titulo__pricipalesDist, .conttitulo__parrafo:hover, .contobservador__parrafo:hover, .contperssist__parrafo:hover, .contmarcoconst__parrafo:hover, .contcel__parrafo:hover, .contdomenergetico__parrafo:hover {
+  font-weight: 900; }
+
+.ContenedorCertificados .CertificadoUno, .ContenedorCertificados .CertificadoDos, .ContenedorCertificados .Certificadotres {
+  box-shadow: 1rem 1rem 2rem; }
+
+/*Estilo---BODY*/
+body {
+  font-family: "Roboto", sans-serif; }
+
+main {
+  margin-top: 8rem; }
+
+/*Estilo---BODY*/
+/*-------------------SECTION | INDEX ----------------------------------*/
+/*-------------------MAIN--------------------*/
+.Colortitulo {
+  color: #fbbc05;
+  font-weight: bold; }
+
+.video {
+  display: none; }
+
+.ContPropuestaValor {
+  color: #fbbc05;
+  background-color: #a46497;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .ContPropuestaValor h2 {
+    margin-bottom: 0rem; }
+
+.ColorQeselco, .ColorQescc {
+  color: #fbbc05; }
+
+/*------ESTILOS FOOTER------*/
+.ContenedorFooter {
+  background-color: #c2bdbd;
+  /*------FIN ETILOS FOOTER------*/ }
+
+@Media screen and (min-width:600px) {
+  .ColorTituloVideo {
+    color: #fbbc05;
+    font-weight: bolder; }
+  .video {
+    display: block; }
+  .video {
+    grid-area: video;
+    align-self: center; } }
+
+@Media screen and (min-width:1024px) {
+  .video {
+    padding: 0.5rem;
+    border-radius: 0.8rem; }
+  iframe {
+    margin-left: 1.7rem;
+    padding: 0.5rem; }
+  .queesconversacion {
+    padding: 0.5rem;
+    border-radius: 0.8rem; }
+  .contcarousel {
+    margin-top: 1rem; }
+  .contPropuestaDeValor--marginTop {
+    border: 1PX solid black; }
+  .navbar-nav .nav-link:hover {
+    transition: 0.5s;
+    background-color: #fbbc05; }
+  .navbar-brand:hover {
+    background-color: #fbbc05; } }
+
+/*-------------------MAIN--------------------*/
+/*------------------FIN SECTION | INDEX ----------------------------------*/
 /*------------------- SECTION | DISTINCIONES ----------------------------------*/
 /*ESTILOS-MAIN*/
 .contdintinciones {
@@ -34,8 +112,7 @@
   grid-area: contdomenergetico; }
 
 .conttitulo__titulo, .contobservador__titulo, .contperssist__titulo, .contmarcoconst__titulo, .contcel__titulo, .contdomenergetico__titulo, .Titulo__pricipalesDist {
-  color: #fbbc05;
-  font-weight: 900; }
+  color: #fbbc05; }
 
 .conttitulo__titulo {
   text-align: center;
@@ -86,19 +163,7 @@
   .contcel--flex {
     display: flex;
     text-align: justify;
-    gap: 1rem; }
-  .conttitulo__parrafo:hover {
-    font-weight: 900; }
-  .contobservador__parrafo:hover {
-    font-weight: 900; }
-  .contperssist__parrafo:hover {
-    font-weight: 900; }
-  .contmarcoconst__parrafo:hover {
-    font-weight: 900; }
-  .contcel__parrafo:hover {
-    font-weight: 900; }
-  .contdomenergetico__parrafo:hover {
-    font-weight: 900; } }
+    gap: 1rem; } }
 
 @Media screen and (min-width:1024px) {
   .contcel div article {
@@ -116,7 +181,7 @@
   .fondo {
     background-color: #e7e2e2; }
   .ContenedorPrinpDistinciones {
-    margin-top: 4rem; } }
+    margin-top: 1.5rem; } }
 
 .ContenedorCertificados {
   display: none; }
@@ -130,24 +195,23 @@
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "TituloCertificados" "CertificadoUno" "CertificadoDos" "Certificadotres";
     justify-items: center;
-    margin: 3rem;
-    gap: 3.5rem; }
+    gap: 1.5rem; }
   .TituloCertificados {
     grid-area: TituloCertificados;
     margin-bottom: 1rem;
     text-transform: uppercase; }
     .TituloCertificados h2 {
       font-weight: bold;
-      color: #fbbc05; }
-  .CertificadoUno {
-    grid-area: CertificadoUno;
-    box-shadow: 1rem 1rem 2rem; }
-  .CertificadoDos {
-    grid-area: CertificadoDos;
-    box-shadow: 1rem 1rem 2rem; }
-  .Certificadotres {
+      color: #fbbc05;
+      margin-top: 3rem; }
+  .ContenedorCertificados .CertificadoUno {
+    grid-area: CertificadoUno; }
+  .ContenedorCertificados .CertificadoDos {
+    grid-area: CertificadoDos; }
+  .ContenedorCertificados .Certificadotres {
     grid-area: Certificadotres;
-    box-shadow: 1rem 1rem 2rem; } }
+    margin-top: 2rem;
+    margin-bottom: 5rem; } }
 
 @Media screen and (min-width:1024px) {
   .ContenedorCertificados {
@@ -156,76 +220,6 @@
     grid-template-rows: auto auto auto;
     grid-template-areas: "TituloCertificados TituloCertificados" "CertificadoUno     CertificadoDos" "Certificadotres    Certificadotres"; } }
 
-/*---------Reset--------*/
-* {
-  margin: 0PX;
-  padding: 0%;
-  box-sizing: border-box; }
-
-/*---------Reset--------*/
-/*Estilo---BODY*/
-body {
-  font-family: "Roboto", sans-serif; }
-
-main {
-  margin-top: 8rem; }
-
-/*Estilo---BODY*/
-/*-------------------SECTION | INDEX ----------------------------------*/
-/*-------------------MAIN--------------------*/
-.Colortitulo {
-  color: #fbbc05;
-  font-weight: bold; }
-
-.video {
-  display: none; }
-
-.ContPropuestaValor {
-  color: #fbbc05;
-  background-color: #a46497;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-
-.ColorQeselco, .ColorQescc {
-  color: #fbbc05; }
-
-/*------FOOTER------*/
-.ContenedorFooter {
-  background-color: #c2bdbd;
-  /*------FOOTER------*/ }
-
-@Media screen and (min-width:600px) {
-  .ColorTituloVideo {
-    color: #fbbc05;
-    font-weight: bolder; }
-  .video {
-    display: block; }
-  .video {
-    grid-area: video;
-    align-self: center; } }
-
-@Media screen and (min-width:1024px) {
-  .video {
-    padding: 0.5rem;
-    border-radius: 0.8rem; }
-  iframe {
-    margin-left: 1.7rem;
-    padding: 0.5rem; }
-  .queesconversacion {
-    padding: 0.5rem;
-    border-radius: 0.8rem; }
-  .contcarousel {
-    margin-top: 1rem; }
-  .contPropuestaDeValor--marginTop {
-    border: 1PX solid black; }
-  .navbar-nav .nav-link:hover {
-    transition: 0.5s;
-    background-color: #fbbc05; }
-  .navbar-brand:hover {
-    background-color: #fbbc05; } }
-
-/*-------------------MAIN--------------------*/
-/*------------------FIN SECTION | INDEX ----------------------------------*/
 /*-------------------SECTION | SESIONES ----------------------------------*/
 /*-------------------MAIN--------------------*/
 .mainsesionesgrid {
@@ -297,9 +291,19 @@ main {
     transition: 0,5s;
     border-radius: 0.3rem; }
   .contsesioncop__imagen:hover {
-    transform: scale(1.02); }
+    transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -ms-transform: scale(1.02); }
   .contsesioncopf__imagen:hover {
-    transform: scale(1.02); }
+    transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -ms-transform: scale(1.02); }
   .contsesiones__parrafo:hover {
     font-weight: 900; }
   .contsesioncop__parrafo:hover {
@@ -322,10 +326,6 @@ main {
   .contsesioncopf__imagen {
     transition: 0,5s;
     border-radius: 0.3rem; }
-  .contsesioncop__imagen:hover {
-    transform: scale(1.02); }
-  .contsesioncopf__imagen:hover {
-    transform: scale(1.02); }
   .ImgsSesiones:hover {
     background-color: #c4d3ef; } }
 
@@ -338,7 +338,7 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "conttitulo" "contdescyfoto";
-  gap: 0 0.5rem; }
+  gap: 0.5rem; }
 
 .conttitulo {
   grid-area: conttitulo;

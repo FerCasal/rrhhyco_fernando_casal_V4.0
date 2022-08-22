@@ -1,0 +1,164 @@
+/*-------------------SECTION | QUIEN SOY ----------------------------------*/
+/*ESTILOS-MAIN*/
+
+.contquiensoy{
+    display: grid;
+    
+    grid-template-columns:1fr;
+    grid-template-rows:auto auto;
+    
+    
+    grid-template-areas: 
+    "conttitulo"
+    "contdescyfoto"
+    ;
+    
+    gap:0.5rem ;
+    
+    
+    }
+    
+    .conttitulo{
+        grid-area:conttitulo ;
+        margin-top: 1rem;
+    }
+    
+    .contdescyfoto{
+        grid-area:contdescyfoto;
+    }
+    
+    
+    .contdescripcion{
+            padding: 1rem;
+            h2{
+                font-size: 1.4rem;
+                text-align: center;
+                line-height: 2.8rem;
+                font-weight: bolder;
+                color: nth($list: $ColorTitulos, $n:8);
+            }    
+    }
+    
+    
+    
+    .ContenedorQuienSoy{
+        margin-top: 2.5rem;
+    }
+    
+    .ContMecaracteriza{
+        h2{
+            color:nth($list: $ColorTitulos, $n:1 );
+            font-weight: bolder;
+        }
+    }
+    
+    .Caracteristicas{
+        color: nth($list: $ColorTitulos, $n:8);
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+    
+    .contdescyfoto__imagen{
+        img{
+            border-radius: 3rem;
+            box-shadow:5px 5px 15px 0px blueviolet;
+        }
+    }
+    
+    .contdescyfoto{   
+            article{
+                margin-bottom:1rem ;
+    }
+    }
+    
+    .contdescyfoto{  
+        div{
+            display:flex;
+            justify-content: center;
+    }
+    }
+    
+    @Media screen and (min-width:600px){ 
+    
+    
+    .contdescripcion{
+        h2:hover{
+            color: nth($list: $ColorTitulos, $n: 9);
+        }
+    }
+    
+    }
+    
+    
+    @Media screen and (min-width:1024px){
+    
+    .contdescyfoto{
+        display: flex;
+    
+        justify-content:space-evenly;
+    
+    }
+    
+    .contdescyfoto__imagen{      
+        height: 18rem;
+        border-radius: 1rem;
+        padding:1rem;
+        box-shadow:5px 5px 15px 0px blueviolet;
+    }
+    
+    .contdescyfoto__imagen:hover{
+        background-color: nth($list: $Colorfondo, $n:8);
+    }
+    
+    .conttitulo{
+        margin-top: 1rem;
+    }
+    
+    .contdescyfoto{
+        height: 70%;
+        padding-left: 0.5rem;
+        border-radius:  5rem;
+        
+    }
+    
+    .contquiensoy{  
+        div{
+            margin-bottom: 0rem;
+    }
+    }
+    
+    .contdescyfoto{  
+        article{
+            margin-bottom:0rem ;
+    }
+    }
+    
+    .contdescyfoto:hover{
+        background-color: white;
+        
+    }
+    
+    .continfoadicional:hover{
+        background-color: white;
+    }
+    
+    .continfoadicional{
+        border-radius: 3rem;
+        padding: 1rem;
+    }
+    
+    .ImgsMeCaracteriza{
+        transition: 0.3s;
+    }
+    
+    .ImgsMeCaracteriza:hover{
+        transform: scale(1.1);
+    }
+    
+    }
+    
+    /*-----------ESTILOS-MAIN------------*/
+    
+    /*------------------FIN-SECTION | QUIEN SOY ----------------------------------*/
+    

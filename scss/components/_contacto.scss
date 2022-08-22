@@ -25,9 +25,7 @@
     
         justify-items: center;
     
-        margin: 3rem;
-    
-        gap: 3.5rem;
+        gap: 1.5rem;
     
     }
     
@@ -39,24 +37,32 @@
         h2{
             font-weight: bold;
             color: nth($list: $ColorTitulos, $n: 1);
+            margin-top: 3rem;
         }
     
     }
     
-    .CertificadoUno{
-        grid-area:CertificadoUno;
-        box-shadow: 1rem 1rem 2rem;
-    }
+    .ContenedorCertificados{
     
-    .CertificadoDos{
-        grid-area: CertificadoDos;
-        box-shadow: 1rem 1rem 2rem;
-    }
-    
-    .Certificadotres{
-        grid-area: Certificadotres;
-        box-shadow: 1rem 1rem 2rem;
-    }
+            .CertificadoUno{
+                grid-area:CertificadoUno;
+                @extend %sombras;
+            }
+            
+            .CertificadoDos{
+                grid-area: CertificadoDos;
+                @extend %sombras;
+            }
+            
+            .Certificadotres{
+                grid-area: Certificadotres;
+                @extend %sombras;
+                margin-top: 2rem;
+                margin-bottom: 5rem;
+
+        }
+
+}
 
 }
 

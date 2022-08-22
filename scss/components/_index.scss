@@ -1,0 +1,114 @@
+
+/*Estilo---BODY*/
+body{
+    font-family:$FontFamily;
+}
+
+main{
+    margin-top: 8rem;
+}
+/*Estilo---BODY*/
+
+
+/*-------------------SECTION | INDEX ----------------------------------*/
+/*-------------------MAIN--------------------*/
+
+.Colortitulo{
+    color:nth($list: $ColorTitulos, $n:1 );
+    font-weight: bold;
+}
+
+.video{
+    display: none;
+}
+
+.ContPropuestaValor{
+    color:nth($list: $ColorTitulos, $n:1 );
+    background-color:nth($list: $Colorfondo, $n:5);
+    margin-top:2rem ;
+    margin-bottom:2rem ;
+    h2{
+        margin-bottom: 0rem;
+
+    }
+
+}
+
+.ColorQeselco, .ColorQescc{
+    color:nth($list: $ColorTitulos, $n:1 );
+
+}
+
+/*------ESTILOS FOOTER------*/
+
+.ContenedorFooter{
+    background-color: rgb(194, 189, 189);
+
+/*------FIN ETILOS FOOTER------*/
+
+
+}
+
+@Media screen and (min-width:600px){
+
+.ColorTituloVideo{
+    color:nth($list: $ColorTitulos, $n:1 );
+    font-weight: bolder;
+
+}
+
+.video{
+    display: block;
+}
+
+.video{
+    grid-area: video;
+    align-self: center; 
+}
+
+}
+
+@Media screen and (min-width:1024px){
+
+.video{
+    padding: 0.5rem;
+    border-radius: 0.8rem;      
+}
+
+iframe{
+    margin-left: 1.7rem;
+    padding: 0.5rem;
+}
+
+
+.queesconversacion{
+    padding: 0.5rem;
+    border-radius: 0.8rem; 
+}
+
+.contcarousel{
+    margin-top: 1rem;
+    
+}
+
+.contPropuestaDeValor--marginTop{
+   border: 1PX solid black;
+}
+
+.navbar-nav .nav-link:hover{
+    transition: 0.5s;
+    background-color: nth($list: $Colorfondo, $n:1);
+    
+}
+
+.navbar-brand:hover{
+    background-color: nth($list: $Colorfondo, $n:1);
+
+}
+
+
+}
+
+
+/*-------------------MAIN--------------------*/
+/*------------------FIN SECTION | INDEX ----------------------------------*/
